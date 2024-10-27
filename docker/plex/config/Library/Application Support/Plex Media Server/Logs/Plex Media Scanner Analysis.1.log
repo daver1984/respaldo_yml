@@ -1,0 +1,89 @@
+Oct 24, 2024 18:35:45.123 [547600612856] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 24, 2024 18:35:45.123 [547600612856] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 24, 2024 18:35:45.123 [547600612856] INFO - Processor: 4-core AArch64
+Oct 24, 2024 18:35:45.124 [547600612856] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 1058
+Oct 24, 2024 18:35:45.125 [547680788536] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 24, 2024 18:35:45.383 [547680788536] DEBUG - Analyzing media parts for item 1058 (Transformers One): 1962
+Oct 24, 2024 18:35:45.386 [547680788536] DEBUG - [ID 2170] Media part analysis: /movies/Transformers Uno (2024).mkv
+Oct 24, 2024 18:35:45.387 [547680788536] DEBUG - [MI] Opening input file: "/movies/Transformers Uno (2024).mkv"
+Oct 24, 2024 18:35:45.387 [547680788536] DEBUG - [FFMPEG] - Opening '/movies/Transformers Uno (2024).mkv' for reading
+Oct 24, 2024 18:35:45.387 [547680788536] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4418
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4510
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4581
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4660
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4721
+Oct 24, 2024 18:35:45.388 [547680788536] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4776
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:45.389 [547680788536] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 92790 bytes read:127489 seeks:2 nb_streams:7
+Oct 24, 2024 18:35:45.391 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:45.391 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=86717
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=86715
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - index=0
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - qscale[0]: 0
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=86646
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - index=1
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - qscale[1]: 1
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=c0 avail_size_in_buf=86577
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - component 0 2:2 id: 0 quant:0
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - pix fmt id 22111100
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - Format yuvj420p chosen by get_format().
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=86558
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=86526
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=86432
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=86401
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - escaping removed 258 bytes
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=86327
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker parser used 86069 bytes (688552 bits)
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:45.392 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:45.393 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:45.393 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 24, 2024 18:35:45.393 [547680788536] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 24, 2024 18:35:45.398 [547680788536] DEBUG - [FFMPEG] - no picture 
+Oct 24, 2024 18:35:45.404 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:45.408 [547680788536] DEBUG - [FFMPEG] - no picture 
+Oct 24, 2024 18:35:45.414 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:45.426 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:45.439 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:45.453 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:45.458 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:45.466 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:45.475 [547680788536] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:45.485 [547680788536] DEBUG - [FFMPEG] - All info found
+Oct 24, 2024 18:35:45.487 [547680788536] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 168235 bytes read:225793 seeks:2 frames:41
+Oct 24, 2024 18:35:45.500 [547680788536] DEBUG - [MI]  * 95055a25d0acd79f89371be0eba7eecd52e185b8 [mkv h264/eac3] Duration: 6254916ms, 1920x800 (2.400000) 23.976fps, bitrate=3401kbps, audio channels=6, optimizedForStreaming=0 ("/movies/Transformers Uno (2024).mkv")
+Oct 24, 2024 18:35:45.500 [547680788536] DEBUG - [MI] Chapters had generic titles, clearing.
+Oct 24, 2024 18:35:45.501 [547680788536] DEBUG - [MI] Closing input file: "/movies/Transformers Uno (2024).mkv"
+Oct 24, 2024 18:35:45.502 [547680788536] DEBUG - Committing media stream changes for part 2170
+Oct 24, 2024 18:35:45.505 [547680788536] DEBUG - Updating media item 1962, size=2659837122, metadata_item_id=1058
+Oct 24, 2024 18:35:45.505 [547680788536] DEBUG - Updating part with ID=2170 [/movies/Transformers Uno (2024).mkv]
+Oct 24, 2024 18:35:45.507 [547584830968] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1058&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 24, 2024 18:35:45.509 [547584683512] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1058&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 24, 2024 18:35:45.510 [547584830968] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1058&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Oct 24, 2024 18:35:45.512 [547584683512] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1058&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Oct 24, 2024 18:35:45.514 [547680788536] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:45.514 [547680788536] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:45.516 [547584683512] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 24, 2024 18:35:45.516 [547680788536] DEBUG - Updating metadata item (save) (Transformers One) with ID 1058

@@ -1,0 +1,31 @@
+{
+  "server": {
+    "privateKey": "2EkpMXfDcpyzBPWvTI0sxdbbxuRoquoRs52q0x/1nHQ=",
+    "publicKey": "H9hMq+t4M9rC0rwHLb3OwipqpoD2s4LUcnTPWL71fys=",
+    "address": "10.8.0.1"
+  },
+  "clients": {
+    "d1fa1420-d140-47d0-9224-cde8e8b4b671": {
+      "id": "d1fa1420-d140-47d0-9224-cde8e8b4b671",
+      "name": "Daver",
+      "address": "10.8.0.2",
+      "privateKey": "cLs2b7BXMNWgLhLWHmPKc13TJkdKq+vgdtpWfZE5Bk8=",
+      "publicKey": "+gF/n9yt/1FzXH213qDRQ/X8ib+4/NgKZJ7C4Vm7HRU=",
+      "preSharedKey": "XdI4XXU5sJWwaF+ZO9Va66NxhvsyqaUMghr3uzEdkps=",
+      "createdAt": "2024-10-25T00:27:55.722Z",
+      "updatedAt": "2024-10-25T00:27:55.722Z",
+      "enabled": true
+    },
+    "6034e242-e010-4204-a76e-3366bfb7c42b": {
+      "id": "6034e242-e010-4204-a76e-3366bfb7c42b",
+      "name": "NB-Dante",
+      "address": "10.8.0.3",
+      "privateKey": "sIGGIbTjV7LhTY237oQdyouMiTtS2E+5gt4lXXcEN3A=",
+      "publicKey": "Qdfw9N6YBGmAtyl4iqzjeg3dCdBkPHByV5H2v1M0szc=",
+      "preSharedKey": "cvvk3l3TLV6uCIR6dktJAohG+JAmLd9oIkYB67v8qps=",
+      "createdAt": "2024-10-25T00:41:02.336Z",
+      "updatedAt": "2024-10-25T00:41:02.336Z",
+      "enabled": true
+    }
+  }
+}

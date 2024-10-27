@@ -1,0 +1,43 @@
+Oct 26, 2024 02:01:56.818 [548065578488] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 26, 2024 02:01:56.818 [548065578488] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 26, 2024 02:01:56.818 [548065578488] INFO - Processor: 4-core AArch64
+Oct 26, 2024 02:01:56.818 [548065578488] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 2 --log-file-suffix  Matcher --item 863
+Oct 26, 2024 02:01:56.820 [548145754168] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 26, 2024 02:01:57.056 [548145754168] DEBUG - Matcher: found 28 auxiliary files for Combate mortal. Poderoso Bison. Fuerza de destrucción de tornado.
+Oct 26, 2024 02:01:57.056 [548145754168] DEBUG - [MI] Opening input file: "/tv/Street Fighter II V/E28.mp4"
+Oct 26, 2024 02:01:57.057 [548145754168] DEBUG - [FFMPEG] - Opening '/tv/Street Fighter II V/E28.mp4' for reading
+Oct 26, 2024 02:01:57.057 [548145754168] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 26, 2024 02:01:57.058 [548145754168] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Oct 26, 2024 02:01:57.058 [548145754168] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Oct 26, 2024 02:01:57.059 [548145754168] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Oct 26, 2024 02:01:57.070 [548145754168] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 3754, duration: 128209410
+Oct 26, 2024 02:01:57.074 [548145754168] DEBUG - [FFMPEG] - Offset DTS by 3754 to make first pts zero.
+Oct 26, 2024 02:01:57.076 [548145754168] DEBUG - [FFMPEG] - Setting codecpar->delay to 1 for stream st: 0
+Oct 26, 2024 02:01:57.076 [548145754168] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Oct 26, 2024 02:01:57.085 [548145754168] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 62930965
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 23.916667 0.004905
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 23.916667 0.004905
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 24.000000 0.000800
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 24.000000 0.000800
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 24.083333 0.016030
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 24.083333 0.016030
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 48.000000 0.003201
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 48.000000 0.003201
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 23.976024 0.000000
+Oct 26, 2024 02:01:57.088 [548145754168] DEBUG - [FFMPEG] - rfps: 47.952048 0.000000
+Oct 26, 2024 02:01:57.089 [548145754168] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 83189469 bytes read:1204876 seeks:1 nb_streams:2
+Oct 26, 2024 02:01:57.090 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.090 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.091 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.091 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.091 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.091 [548145754168] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 26, 2024 02:01:57.092 [548145754168] DEBUG - [FFMPEG] - no picture 
+Oct 26, 2024 02:01:57.095 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 26, 2024 02:01:57.097 [548145754168] DEBUG - [FFMPEG] - All info found
+Oct 26, 2024 02:01:57.098 [548145754168] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 533 bytes read:1237644 seeks:2 frames:3
+Oct 26, 2024 02:01:57.099 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.099 [548145754168] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.099 [548145754168] ERROR - [Time] Date looks invalid: 2014--1--1
+Oct 26, 2024 02:01:57.100 [548145754168] DEBUG - [MI] Closing input file: "/tv/Street Fighter II V/E28.mp4"
+Oct 26, 2024 02:01:57.100 [548145754168] DEBUG - Matcher: no sidecar subtitle files found for /tv/Street Fighter II V/E28.mp4

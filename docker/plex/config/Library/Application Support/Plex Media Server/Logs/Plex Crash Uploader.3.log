@@ -1,0 +1,5 @@
+Oct 26, 2024 16:00:21.922 [548290714320] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1729906558 Duration: 62663 UserId: verdugoper@gmail.com Version: 1.41.1.9057-af5eaea7a
+Oct 26, 2024 16:00:21.926 [548322277520] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oct 26, 2024 16:00:22.432 [548290525904] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.5s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oct 26, 2024 16:00:22.443 [548322277520] INFO - Successfully reported session health
+Oct 26, 2024 16:00:22.443 [548322277520] INFO - Crash Uploader - Processing Complete.

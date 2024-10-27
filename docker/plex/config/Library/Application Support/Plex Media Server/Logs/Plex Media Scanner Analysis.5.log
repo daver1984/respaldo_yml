@@ -1,0 +1,508 @@
+Oct 18, 2024 02:00:01.850 [548052266488] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 18, 2024 02:00:01.850 [548052266488] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 18, 2024 02:00:01.850 [548052266488] INFO - Processor: 4-core AArch64
+Oct 18, 2024 02:00:01.850 [548052266488] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --item 1037 --log-file-suffix  Analysis
+Oct 18, 2024 02:00:01.852 [548132446264] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 18, 2024 02:00:02.113 [548132446264] DEBUG - Analyzing media parts for item 1037 (Lord of Misrule): 1911
+Oct 18, 2024 02:00:02.117 [548132446264] DEBUG - [ID 2119] Media part analysis: /movies/Ritos ocultos (2023).mkv
+Oct 18, 2024 02:00:02.117 [548132446264] DEBUG - [MI] Opening input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.117 [548132446264] DEBUG - [FFMPEG] - Opening '/movies/Ritos ocultos (2023).mkv' for reading
+Oct 18, 2024 02:00:02.117 [548132446264] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 18, 2024 02:00:02.118 [548132446264] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4411
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4486
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4556
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4635
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4696
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4751
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49491
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49535
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49579
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49624
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49669
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49714
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49759
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49804
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49849
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49895
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49941
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49987
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.119 [548132446264] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.120 [548132446264] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 50099 bytes read:67519 seeks:2 nb_streams:7
+Oct 18, 2024 02:00:02.122 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.122 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=43395
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43393
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - index=0
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - qscale[0]: 3
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43324
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - index=1
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - qscale[1]: 6
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=c0 avail_size_in_buf=43255
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - component 0 2:2 id: 0 quant:0
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - pix fmt id 22111100
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - Format yuvj420p chosen by get_format().
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43236
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43206
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43121
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43093
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - escaping removed 122 bytes
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=43043
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker parser used 42921 bytes (343368 bits)
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 18, 2024 02:00:02.124 [548132446264] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 18, 2024 02:00:02.126 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.126 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.127 [548132446264] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.142 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.148 [548132446264] DEBUG - [FFMPEG] - no picture 
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.156 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.173 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.182 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.195 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.213 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.226 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.239 [548132446264] DEBUG - [FFMPEG] - All info found
+Oct 18, 2024 02:00:02.243 [548132446264] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 103590 bytes read:133055 seeks:2 frames:40
+Oct 18, 2024 02:00:02.256 [548132446264] DEBUG - [MI]  * b96f96b7d3432618b813629ec252bf90beb00597 [mkv h264/ac3] Duration: 6247040ms, 1920x804 (2.388060) 23.976fps, bitrate=4628kbps, audio channels=6, optimizedForStreaming=0 ("/movies/Ritos ocultos (2023).mkv")
+Oct 18, 2024 02:00:02.256 [548132446264] DEBUG - [MI] Importing 12 media chapters.
+Oct 18, 2024 02:00:02.256 [548132446264] DEBUG - [MI] Chapters had generic titles, clearing.
+Oct 18, 2024 02:00:02.257 [548132446264] DEBUG - [MI] Closing input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.258 [548132446264] DEBUG - Streams didn't change in analysis, not saving.
+Oct 18, 2024 02:00:02.259 [548132446264] DEBUG - Updating media item 1911, size=3614238430, metadata_item_id=1037
+Oct 18, 2024 02:00:02.259 [548132446264] DEBUG - Updating part with ID=2119 [/movies/Ritos ocultos (2023).mkv]
+Oct 18, 2024 02:00:02.260 [548036607480] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 18, 2024 02:00:02.261 [548132446264] DEBUG - [MI] Opening input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.261 [548132446264] DEBUG - [FFMPEG] - Opening '/movies/Ritos ocultos (2023).mkv' for reading
+Oct 18, 2024 02:00:02.261 [548132446264] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4411
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4486
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4556
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4635
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4696
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4751
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49491
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49535
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49579
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49624
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49669
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49714
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49759
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49804
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49849
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49895
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49941
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49987
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.262 [548036021752] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.262 [548132446264] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.263 [548132446264] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 50099 bytes read:67519 seeks:2 nb_streams:7
+Oct 18, 2024 02:00:02.264 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.264 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=43395
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43393
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - index=0
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - qscale[0]: 3
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43324
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - index=1
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - qscale[1]: 6
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=c0 avail_size_in_buf=43255
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - component 0 2:2 id: 0 quant:0
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - pix fmt id 22111100
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - Format yuvj420p chosen by get_format().
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43236
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43206
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43121
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43093
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - escaping removed 122 bytes
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=43043
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker parser used 42921 bytes (343368 bits)
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.265 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.265 [548036607480] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.266 [548132446264] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 18, 2024 02:00:02.268 [548036021752] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing (reused)
+Oct 18, 2024 02:00:02.277 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.278 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.282 [548132446264] DEBUG - [FFMPEG] - no picture 
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.287 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.298 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.307 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.315 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.323 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.330 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.338 [548132446264] DEBUG - [FFMPEG] - All info found
+Oct 18, 2024 02:00:02.342 [548132446264] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 103590 bytes read:133055 seeks:2 frames:40
+Oct 18, 2024 02:00:02.342 [548132446264] DEBUG - Creating /config/Library/Application Support/Plex Media Server/Media/localhost/b/96f96b7d3432618b813629ec252bf90beb00597.bundle/Contents/Thumbnails/thumb1.jpg (50.0%, 720x512).
+Oct 18, 2024 02:00:02.343 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.343 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.354 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.354 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.355 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.356 [548132446264] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 18, 2024 02:00:02.360 [548132446264] DEBUG - [FFMPEG] - no picture 
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.396 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.422 [548132446264] WARN - [FFMPEG] - No accelerated colorspace conversion found from yuv420p to rgb24.
+Oct 18, 2024 02:00:02.527 [548132446264] DEBUG - Loaded memory image of size 1920x804.
+Oct 18, 2024 02:00:02.583 [548132446264] DEBUG - [MI] Closing input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.584 [548132446264] DEBUG - [MI] Opening input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.584 [548132446264] DEBUG - [FFMPEG] - Opening '/movies/Ritos ocultos (2023).mkv' for reading
+Oct 18, 2024 02:00:02.584 [548132446264] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 18, 2024 02:00:02.584 [548132446264] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4411
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4486
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4556
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4635
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4696
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4751
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49491
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49535
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49579
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49624
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49669
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49714
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49759
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49804
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49849
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49895
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49941
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 49987
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 18, 2024 02:00:02.585 [548132446264] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 50099 bytes read:67519 seeks:2 nb_streams:7
+Oct 18, 2024 02:00:02.586 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.586 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=43395
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43393
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - index=0
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - qscale[0]: 3
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=43324
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - index=1
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - qscale[1]: 6
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=c0 avail_size_in_buf=43255
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - component 0 2:2 id: 0 quant:0
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - pix fmt id 22111100
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - Format yuvj420p chosen by get_format().
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43236
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43206
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43121
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=43093
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - escaping removed 122 bytes
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=43043
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker parser used 42921 bytes (343368 bits)
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.587 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.588 [548132446264] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.599 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.603 [548132446264] DEBUG - [FFMPEG] - no picture 
+Oct 18, 2024 02:00:02.608 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.608 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.609 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.619 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.627 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.634 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.642 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.649 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.657 [548132446264] DEBUG - [FFMPEG] - All info found
+Oct 18, 2024 02:00:02.661 [548132446264] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 103590 bytes read:133055 seeks:2 frames:40
+Oct 18, 2024 02:00:02.661 [548132446264] DEBUG - Creating /config/Library/Application Support/Plex Media Server/Media/localhost/b/96f96b7d3432618b813629ec252bf90beb00597.bundle/Contents/Art/art1.jpg (50.0%, 1280x720).
+Oct 18, 2024 02:00:02.662 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.662 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.671 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.671 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.672 [548132446264] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 18, 2024 02:00:02.677 [548132446264] DEBUG - [FFMPEG] - no picture 
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.712 [548132446264] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 18, 2024 02:00:02.734 [548132446264] WARN - [FFMPEG] - No accelerated colorspace conversion found from yuv420p to rgb24.
+Oct 18, 2024 02:00:02.836 [548132446264] DEBUG - Loaded memory image of size 1920x804.
+Oct 18, 2024 02:00:02.995 [548132446264] DEBUG - [MI] Closing input file: "/movies/Ritos ocultos (2023).mkv"
+Oct 18, 2024 02:00:02.999 [548132446264] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 18, 2024 02:00:02.999 [548132446264] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 18, 2024 02:00:03.001 [548036021752] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 18, 2024 02:00:03.001 [548132446264] DEBUG - Updating metadata item (save) (Lord of Misrule) with ID 1037
+Oct 18, 2024 02:00:03.008 [548036607480] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Oct 18, 2024 02:00:03.010 [548036021752] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1037&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_datetime",
+  "data": {
+    "items": [
+      {
+        "id": "fecha_hora",
+        "name": "Fecha hora",
+        "has_date": true,
+        "has_time": false
+      }
+    ]
+  }
+}

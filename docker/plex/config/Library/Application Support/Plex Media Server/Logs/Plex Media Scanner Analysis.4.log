@@ -1,0 +1,104 @@
+Oct 21, 2024 19:24:23.828 [548411125240] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 21, 2024 19:24:23.829 [548411125240] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 21, 2024 19:24:23.829 [548411125240] INFO - Processor: 4-core AArch64
+Oct 21, 2024 19:24:23.829 [548411125240] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 1054
+Oct 21, 2024 19:24:23.829 [548491305016] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 21, 2024 19:24:24.139 [548491305016] DEBUG - Analyzing media parts for item 1054 (Dark Harvest): 1956
+Oct 21, 2024 19:24:24.142 [548491305016] DEBUG - [ID 2164] Media part analysis: /movies/Cosecha Oscura (2023).mkv
+Oct 21, 2024 19:24:24.151 [548491305016] DEBUG - [MI] Opening input file: "/movies/Cosecha Oscura (2023).mkv"
+Oct 21, 2024 19:24:24.168 [548491305016] DEBUG - [FFMPEG] - Opening '/movies/Cosecha Oscura (2023).mkv' for reading
+Oct 21, 2024 19:24:24.172 [548491305016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 21, 2024 19:24:24.294 [548491305016] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 21, 2024 19:24:24.294 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4424
+Oct 21, 2024 19:24:24.294 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4516
+Oct 21, 2024 19:24:24.294 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4587
+Oct 21, 2024 19:24:24.295 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4666
+Oct 21, 2024 19:24:24.295 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4727
+Oct 21, 2024 19:24:24.295 [548491305016] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4782
+Oct 21, 2024 19:24:24.295 [548491305016] ERROR - [FFMPEG] - 0x00 at pos 2535357031 (0x971e7a67) invalid as first byte of an EBML number
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 21, 2024 19:24:24.304 [548491305016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 56813 bytes read:67519 seeks:2 nb_streams:7
+Oct 21, 2024 19:24:24.325 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 21, 2024 19:24:24.325 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=50734
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker=e2 avail_size_in_buf=50732
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker parser used 576 bytes (4608 bits)
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker=ee avail_size_in_buf=50154
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker parser used 33 bytes (264 bits)
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=50119
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - index=0
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - qscale[0]: 1
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - index=1
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - qscale[1]: 5
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker parser used 132 bytes (1056 bits)
+Oct 21, 2024 19:24:24.341 [548491305016] DEBUG - [FFMPEG] - marker=c2 avail_size_in_buf=49985
+Oct 21, 2024 19:24:24.343 [548491305016] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 21, 2024 19:24:24.343 [548491305016] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 21, 2024 19:24:24.343 [548491305016] DEBUG - [FFMPEG] - component 0 1:1 id: 0 quant:0
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - pix fmt id 11111100
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - Format yuvj444p chosen by get_format().
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=49966
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 45262 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=49706
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 4444 bytes (35552 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 42498 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=45254
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 2756 bytes (22048 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 38779 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=42485
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 3706 bytes (29648 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 31573 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=38765
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 7192 bytes (57536 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 29905 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=31533
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 1628 bytes (13024 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 26284 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=29900
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 3616 bytes (28928 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - escaping removed 71 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=26267
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker parser used 26196 bytes (209568 bits)
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 21, 2024 19:24:24.344 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 21, 2024 19:24:24.345 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 21, 2024 19:24:24.346 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 21, 2024 19:24:24.346 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 21, 2024 19:24:24.346 [548491305016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 21, 2024 19:24:24.357 [548491305016] DEBUG - [FFMPEG] - no picture 
+Oct 21, 2024 19:24:24.373 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 21, 2024 19:24:24.380 [548491305016] DEBUG - [FFMPEG] - no picture 
+Oct 21, 2024 19:24:24.391 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 21, 2024 19:24:24.417 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 21, 2024 19:24:24.443 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 21, 2024 19:24:24.472 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 21, 2024 19:24:24.485 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 21, 2024 19:24:24.503 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 21, 2024 19:24:24.521 [548491305016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 21, 2024 19:24:24.540 [548491305016] DEBUG - [FFMPEG] - All info found
+Oct 21, 2024 19:24:24.547 [548491305016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 140445 bytes read:165823 seeks:2 frames:41
+Oct 21, 2024 19:24:24.586 [548491305016] DEBUG - [MI]  * 06db6dab362bca00b9e92febc3f010ba545027b8 [mkv h264/eac3] Duration: 5743296ms, 1920x800 (2.400000) 23.976fps, bitrate=3531kbps, audio channels=6, optimizedForStreaming=0 ("/movies/Cosecha Oscura (2023).mkv")
+Oct 21, 2024 19:24:24.586 [548491305016] DEBUG - [MI] Chapters had generic titles, clearing.
+Oct 21, 2024 19:24:24.588 [548491305016] DEBUG - [MI] Closing input file: "/movies/Cosecha Oscura (2023).mkv"
+Oct 21, 2024 19:24:24.590 [548491305016] DEBUG - Committing media stream changes for part 2164
+Oct 21, 2024 19:24:24.601 [548491305016] DEBUG - Updating media item 1956, size=2535359014, metadata_item_id=1054
+Oct 21, 2024 19:24:24.601 [548491305016] DEBUG - Updating part with ID=2164 [/movies/Cosecha Oscura (2023).mkv]
+Oct 21, 2024 19:24:24.604 [548396199416] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1054&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 21, 2024 19:24:24.614 [548395363832] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1054&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 21, 2024 19:24:24.614 [548396199416] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1054&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Oct 21, 2024 19:24:24.617 [548395363832] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1054&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Oct 21, 2024 19:24:24.622 [548491305016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 21, 2024 19:24:24.623 [548491305016] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 21, 2024 19:24:24.626 [548395363832] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 21, 2024 19:24:24.627 [548491305016] DEBUG - Updating metadata item (save) (Dark Harvest) with ID 1054

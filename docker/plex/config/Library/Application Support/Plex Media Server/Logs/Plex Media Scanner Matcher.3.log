@@ -1,0 +1,34 @@
+Oct 26, 2024 02:01:57.178 [548508102136] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 26, 2024 02:01:57.179 [548508102136] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 26, 2024 02:01:57.179 [548508102136] INFO - Processor: 4-core AArch64
+Oct 26, 2024 02:01:57.179 [548508102136] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 2 --log-file-suffix  Matcher --item 864
+Oct 26, 2024 02:01:57.180 [548588277816] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 26, 2024 02:01:57.417 [548588277816] DEBUG - Matcher: found 28 auxiliary files for La lucha decisiva. La batalla final.
+Oct 26, 2024 02:01:57.417 [548588277816] DEBUG - [MI] Opening input file: "/tv/Street Fighter II V/E29.mp4"
+Oct 26, 2024 02:01:57.417 [548588277816] DEBUG - [FFMPEG] - Opening '/tv/Street Fighter II V/E29.mp4' for reading
+Oct 26, 2024 02:01:57.418 [548588277816] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 26, 2024 02:01:57.419 [548588277816] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Oct 26, 2024 02:01:57.419 [548588277816] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Oct 26, 2024 02:01:57.420 [548588277816] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Oct 26, 2024 02:01:57.429 [548588277816] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1001, duration: 35467440
+Oct 26, 2024 02:01:57.434 [548588277816] DEBUG - [FFMPEG] - Offset DTS by 1001 to make first pts zero.
+Oct 26, 2024 02:01:57.435 [548588277816] DEBUG - [FFMPEG] - Setting codecpar->delay to 1 for stream st: 0
+Oct 26, 2024 02:01:57.435 [548588277816] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Oct 26, 2024 02:01:57.445 [548588277816] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 52140047
+Oct 26, 2024 02:01:57.448 [548588277816] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 65267683 bytes read:1245546 seeks:1 nb_streams:2
+Oct 26, 2024 02:01:57.450 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.450 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.450 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.450 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.451 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 26, 2024 02:01:57.451 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.451 [548588277816] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 26, 2024 02:01:57.452 [548588277816] DEBUG - [FFMPEG] - no picture 
+Oct 26, 2024 02:01:57.456 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 26, 2024 02:01:57.459 [548588277816] DEBUG - [FFMPEG] - All info found
+Oct 26, 2024 02:01:57.460 [548588277816] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 10100 bytes read:1278314 seeks:2 frames:3
+Oct 26, 2024 02:01:57.461 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.461 [548588277816] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 26, 2024 02:01:57.461 [548588277816] ERROR - [Time] Date looks invalid: 2014--1--1
+Oct 26, 2024 02:01:57.461 [548588277816] DEBUG - [MI] Closing input file: "/tv/Street Fighter II V/E29.mp4"
+Oct 26, 2024 02:01:57.462 [548588277816] DEBUG - Matcher: no sidecar subtitle files found for /tv/Street Fighter II V/E29.mp4

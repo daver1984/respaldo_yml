@@ -1,0 +1,7 @@
+Oct 26, 2024 04:17:01.963 [548303101432] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 26, 2024 04:17:01.964 [548303101432] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 26, 2024 04:17:01.964 [548303101432] INFO - Processor: 4-core AArch64
+Oct 26, 2024 04:17:01.964 [548303101432] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 1057
+Oct 26, 2024 04:17:01.966 [548383277112] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 26, 2024 04:17:02.275 [548383277112] DEBUG - Matcher: found 69 auxiliary files for Loups-Garous
+Oct 26, 2024 04:17:02.275 [548383277112] DEBUG - Matcher: no sidecar subtitle files found for /movies/Los hombres lobo (2024).mkv

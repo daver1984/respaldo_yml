@@ -1,0 +1,123 @@
+Oct 24, 2024 18:35:43.356 [547960499704] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 24, 2024 18:35:43.358 [547960499704] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 24, 2024 18:35:43.358 [547960499704] INFO - Processor: 4-core AArch64
+Oct 24, 2024 18:35:43.358 [547960499704] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 1056
+Oct 24, 2024 18:35:43.358 [548040675384] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 24, 2024 18:35:43.600 [548040675384] DEBUG - Analyzing media parts for item 1056 (LEGO Marvel Avengers: Mission Demolition): 1960
+Oct 24, 2024 18:35:43.603 [548040675384] DEBUG - [ID 2168] Media part analysis: /movies/LEGO Marvel Avengers Mision demolicion (2024).mkv
+Oct 24, 2024 18:35:43.604 [548040675384] DEBUG - [MI] Opening input file: "/movies/LEGO Marvel Avengers Mision demolicion (2024).mkv"
+Oct 24, 2024 18:35:43.604 [548040675384] DEBUG - [FFMPEG] - Opening '/movies/LEGO Marvel Avengers Mision demolicion (2024).mkv' for reading
+Oct 24, 2024 18:35:43.604 [548040675384] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4426
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4530
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4601
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4680
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4741
+Oct 24, 2024 18:35:43.605 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4802
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - Unknown entry 0x437D at pos. 100040
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.607 [548040675384] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.608 [548040675384] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 24, 2024 18:35:43.608 [548040675384] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 100152 bytes read:134672 seeks:2 nb_streams:7
+Oct 24, 2024 18:35:43.617 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:43.617 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=93900
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=93898
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - index=0
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - qscale[0]: 0
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=93829
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - index=1
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - qscale[1]: 1
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 67 bytes (536 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=c0 avail_size_in_buf=93760
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - component 0 2:2 id: 0 quant:0
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - pix fmt id 22111100
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - Format yuvj420p chosen by get_format().
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=93741
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=93709
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=93611
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=93580
+Oct 24, 2024 18:35:43.618 [548040675384] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - escaping removed 281 bytes
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=93501
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - marker parser used 93220 bytes (745760 bits)
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 24, 2024 18:35:43.619 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.620 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.620 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.620 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 24, 2024 18:35:43.620 [548040675384] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 24, 2024 18:35:43.627 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.627 [548040675384] DEBUG - [FFMPEG] - no picture 
+Oct 24, 2024 18:35:43.636 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.636 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.636 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:43.641 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.641 [548040675384] DEBUG - [FFMPEG] - no picture 
+Oct 24, 2024 18:35:43.646 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.647 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.647 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:43.651 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.660 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.660 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.660 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.665 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.674 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.674 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.674 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.679 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.689 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.689 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.689 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:43.689 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.695 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.695 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.695 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 24, 2024 18:35:43.696 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.704 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.704 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.704 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.705 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.714 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.714 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.714 [548040675384] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 24, 2024 18:35:43.714 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.723 [548040675384] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 24, 2024 18:35:43.723 [548040675384] DEBUG - [FFMPEG] - All info found
+Oct 24, 2024 18:35:43.727 [548040675384] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 134273 bytes read:200208 seeks:2 frames:41
+Oct 24, 2024 18:35:43.738 [548040675384] DEBUG - [MI]  * 332f0e9f12022ab42ff27ab26b583e9a1fa785d6 [mkv h264/eac3] Duration: 2411680ms, 1920x1080 (1.777778) 24.000fps, bitrate=7006kbps, audio channels=6, optimizedForStreaming=0 ("/movies/LEGO Marvel Avengers Mision demolicion (2024).mkv")
+Oct 24, 2024 18:35:43.738 [548040675384] DEBUG - [MI] Importing 1 media chapters.
+Oct 24, 2024 18:35:43.739 [548040675384] DEBUG - [MI] Closing input file: "/movies/LEGO Marvel Avengers Mision demolicion (2024).mkv"
+Oct 24, 2024 18:35:43.740 [548040675384] DEBUG - Committing media stream changes for part 2168
+Oct 24, 2024 18:35:43.743 [548040675384] DEBUG - Updating media item 1960, size=2112050745, metadata_item_id=1056
+Oct 24, 2024 18:35:43.743 [548040675384] DEBUG - Updating part with ID=2168 [/movies/LEGO Marvel Avengers Mision demolicion (2024).mkv]
+Oct 24, 2024 18:35:43.745 [547945696760] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1056&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 24, 2024 18:35:43.748 [547944623608] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1056&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 24, 2024 18:35:43.748 [547945696760] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1056&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Oct 24, 2024 18:35:43.751 [547944623608] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=1056&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Oct 24, 2024 18:35:43.751 [548040675384] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:43.751 [548040675384] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:43.753 [547944623608] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 24, 2024 18:35:43.753 [548040675384] DEBUG - Updating metadata item (save) (LEGO Marvel Avengers: Mission Demolition) with ID 1056
+Oct 24, 2024 18:35:43.757 [548040675384] DEBUG - Doing expensive tags write for 'LEGO Marvel Avengers: Mission Demolition' because something changed.
+Oct 24, 2024 18:35:43.764 [548040675384] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:43.764 [548040675384] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 24, 2024 18:35:43.765 [547944623608] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 24, 2024 18:35:43.766 [548040675384] DEBUG - Updating metadata item (save) (LEGO Marvel Avengers: Mission Demolition) with ID 1056

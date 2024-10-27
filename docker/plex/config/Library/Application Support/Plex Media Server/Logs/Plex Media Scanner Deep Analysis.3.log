@@ -1,0 +1,152 @@
+Oct 22, 2024 02:04:43.234 [548021673464] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
+Oct 22, 2024 02:04:43.234 [548021673464] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
+Oct 22, 2024 02:04:43.235 [548021673464] INFO - Processor: 4-core AArch64
+Oct 22, 2024 02:04:43.235 [548021673464] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze-deeply --item 1054 --log-file-suffix  Deep Analysis
+Oct 22, 2024 02:04:43.236 [548101853240] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 22, 2024 02:04:43.477 [548101853240] DEBUG - [MI] Opening input file: "/movies/Cosecha Oscura (2023).mkv"
+Oct 22, 2024 02:04:43.494 [548101853240] DEBUG - [FFMPEG] - Opening '/movies/Cosecha Oscura (2023).mkv' for reading
+Oct 22, 2024 02:04:43.497 [548101853240] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4424
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4516
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4587
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4666
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4727
+Oct 22, 2024 02:04:43.529 [548101853240] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4782
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:4 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - st:5 removing common factor 1000000 from timebase
+Oct 22, 2024 02:04:43.537 [548101853240] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 56813 bytes read:67519 seeks:2 nb_streams:7
+Oct 22, 2024 02:04:43.556 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 22, 2024 02:04:43.556 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker=d8 avail_size_in_buf=50734
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker=e2 avail_size_in_buf=50732
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker parser used 576 bytes (4608 bits)
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker=ee avail_size_in_buf=50154
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker parser used 33 bytes (264 bits)
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker=db avail_size_in_buf=50119
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - index=0
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - qscale[0]: 1
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - index=1
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - qscale[1]: 5
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker parser used 132 bytes (1056 bits)
+Oct 22, 2024 02:04:43.570 [548101853240] DEBUG - [FFMPEG] - marker=c2 avail_size_in_buf=49985
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - Changing bps from 0 to 8
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - sof0: picture: 305x452
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - component 0 1:1 id: 0 quant:0
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - component 1 1:1 id: 1 quant:1
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - component 2 1:1 id: 2 quant:1
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - pix fmt id 11111100
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - Format yuvj444p chosen by get_format().
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 17 bytes (136 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=c4 avail_size_in_buf=49966
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 0 bytes (0 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 45262 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=49706
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 4444 bytes (35552 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 42498 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=45254
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 2756 bytes (22048 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 38779 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=42485
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 3706 bytes (29648 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 31573 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=38765
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 7192 bytes (57536 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 29905 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=31533
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 1628 bytes (13024 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 26284 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=29900
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 3616 bytes (28928 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - escaping removed 71 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=da avail_size_in_buf=26267
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker parser used 26196 bytes (209568 bits)
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - marker=d9 avail_size_in_buf=0
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - decode frame unused 0 bytes
+Oct 22, 2024 02:04:43.573 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 22, 2024 02:04:43.574 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 22, 2024 02:04:43.574 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 22, 2024 02:04:43.574 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Oct 22, 2024 02:04:43.574 [548101853240] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 22, 2024 02:04:43.579 [548101853240] DEBUG - [FFMPEG] - no picture 
+Oct 22, 2024 02:04:43.586 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 22, 2024 02:04:43.590 [548101853240] DEBUG - [FFMPEG] - no picture 
+Oct 22, 2024 02:04:43.594 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 22, 2024 02:04:43.605 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 22, 2024 02:04:43.615 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 22, 2024 02:04:43.626 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 22, 2024 02:04:43.631 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Oct 22, 2024 02:04:43.638 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 22, 2024 02:04:43.644 [548101853240] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 22, 2024 02:04:43.652 [548101853240] DEBUG - [FFMPEG] - All info found
+Oct 22, 2024 02:04:43.654 [548101853240] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 140445 bytes read:165823 seeks:2 frames:41
+Oct 22, 2024 02:04:44.091 [548101853240] DEBUG - Deep Analysis: Read 10000 packets at 115.072000
+Oct 22, 2024 02:04:44.422 [548101853240] DEBUG - Deep Analysis: Read 20000 packets at 230.336000
+Oct 22, 2024 02:04:44.653 [548101853240] DEBUG - Deep Analysis: Read 30000 packets at 345.248000
+Oct 22, 2024 02:04:44.921 [548101853240] DEBUG - Deep Analysis: Read 40000 packets at 460.384000
+Oct 22, 2024 02:04:45.185 [548101853240] DEBUG - Deep Analysis: Read 50000 packets at 575.033000
+Oct 22, 2024 02:04:45.488 [548101853240] DEBUG - Deep Analysis: Read 60000 packets at 690.048000
+Oct 22, 2024 02:04:45.732 [548101853240] DEBUG - Deep Analysis: Read 70000 packets at 804.736000
+Oct 22, 2024 02:04:45.942 [548101853240] DEBUG - Deep Analysis: Read 80000 packets at 919.648000
+Oct 22, 2024 02:04:46.193 [548101853240] DEBUG - Deep Analysis: Read 90000 packets at 1034.208000
+Oct 22, 2024 02:04:46.412 [548101853240] DEBUG - Deep Analysis: Read 100000 packets at 1148.856000
+Oct 22, 2024 02:04:46.606 [548101853240] DEBUG - Deep Analysis: Read 110000 packets at 1263.596000
+Oct 22, 2024 02:04:46.800 [548101853240] DEBUG - Deep Analysis: Read 120000 packets at 1379.086000
+Oct 22, 2024 02:04:47.050 [548101853240] DEBUG - Deep Analysis: Read 130000 packets at 1494.336000
+Oct 22, 2024 02:04:47.299 [548101853240] DEBUG - Deep Analysis: Read 140000 packets at 1609.440000
+Oct 22, 2024 02:04:47.568 [548101853240] DEBUG - Deep Analysis: Read 150000 packets at 1724.544000
+Oct 22, 2024 02:04:47.790 [548101853240] DEBUG - Deep Analysis: Read 160000 packets at 1839.254000
+Oct 22, 2024 02:04:48.085 [548101853240] DEBUG - Deep Analysis: Read 170000 packets at 1954.304000
+Oct 22, 2024 02:04:48.300 [548101853240] DEBUG - Deep Analysis: Read 180000 packets at 2068.817000
+Oct 22, 2024 02:04:48.621 [548101853240] DEBUG - Deep Analysis: Read 190000 packets at 2183.904000
+Oct 22, 2024 02:04:48.874 [548101853240] DEBUG - Deep Analysis: Read 200000 packets at 2299.168000
+Oct 22, 2024 02:04:49.091 [548101853240] DEBUG - Deep Analysis: Read 210000 packets at 2414.016000
+Oct 22, 2024 02:04:49.313 [548101853240] DEBUG - Deep Analysis: Read 220000 packets at 2528.864000
+Oct 22, 2024 02:04:49.559 [548101853240] DEBUG - Deep Analysis: Read 230000 packets at 2644.032000
+Oct 22, 2024 02:04:49.828 [548101853240] DEBUG - Deep Analysis: Read 240000 packets at 2758.756000
+Oct 22, 2024 02:04:50.133 [548101853240] DEBUG - Deep Analysis: Read 250000 packets at 2873.760000
+Oct 22, 2024 02:04:50.321 [548101853240] DEBUG - Deep Analysis: Read 260000 packets at 2988.444000
+Oct 22, 2024 02:04:50.479 [548101853240] DEBUG - Deep Analysis: Read 270000 packets at 3103.360000
+Oct 22, 2024 02:04:50.693 [548101853240] DEBUG - Deep Analysis: Read 280000 packets at 3218.464000
+Oct 22, 2024 02:04:50.973 [548101853240] DEBUG - Deep Analysis: Read 290000 packets at 3333.205000
+Oct 22, 2024 02:04:51.179 [548101853240] DEBUG - Deep Analysis: Read 300000 packets at 3448.480000
+Oct 22, 2024 02:04:51.386 [548101853240] DEBUG - Deep Analysis: Read 310000 packets at 3563.060000
+Oct 22, 2024 02:04:51.617 [548101853240] DEBUG - Deep Analysis: Read 320000 packets at 3678.112000
+Oct 22, 2024 02:04:51.851 [548101853240] DEBUG - Deep Analysis: Read 330000 packets at 3793.081000
+Oct 22, 2024 02:04:52.102 [548101853240] DEBUG - Deep Analysis: Read 340000 packets at 3908.192000
+Oct 22, 2024 02:04:52.280 [548101853240] DEBUG - Deep Analysis: Read 350000 packets at 4023.072000
+Oct 22, 2024 02:04:52.481 [548101853240] DEBUG - Deep Analysis: Read 360000 packets at 4137.952000
+Oct 22, 2024 02:04:52.798 [548101853240] DEBUG - Deep Analysis: Read 370000 packets at 4252.665000
+Oct 22, 2024 02:04:53.051 [548101853240] DEBUG - Deep Analysis: Read 380000 packets at 4368.160000
+Oct 22, 2024 02:04:53.263 [548101853240] DEBUG - Deep Analysis: Read 390000 packets at 4483.168000
+Oct 22, 2024 02:04:53.490 [548101853240] DEBUG - Deep Analysis: Read 400000 packets at 4598.336000
+Oct 22, 2024 02:04:53.692 [548101853240] DEBUG - Deep Analysis: Read 410000 packets at 4713.292000
+Oct 22, 2024 02:04:53.994 [548101853240] DEBUG - Deep Analysis: Read 420000 packets at 4828.608000
+Oct 22, 2024 02:04:54.432 [548101853240] DEBUG - Deep Analysis: Read 430000 packets at 4943.564000
+Oct 22, 2024 02:04:54.721 [548101853240] DEBUG - Deep Analysis: Read 440000 packets at 5058.804000
+Oct 22, 2024 02:04:55.092 [548101853240] DEBUG - Deep Analysis: Read 450000 packets at 5174.252000
+Oct 22, 2024 02:04:55.398 [548101853240] DEBUG - Deep Analysis: Read 460000 packets at 5290.080000
+Oct 22, 2024 02:04:55.553 [548101853240] DEBUG - Deep Analysis: Read 470000 packets at 5405.483000
+Oct 22, 2024 02:04:55.748 [548101853240] DEBUG - Deep Analysis: Read 480000 packets at 5521.248000
+Oct 22, 2024 02:04:55.904 [548101853240] DEBUG - Deep Analysis: Read 490000 packets at 5636.548000
+Oct 22, 2024 02:04:56.025 [548101853240] DEBUG - Deep Analysis: Sorting packets
+Oct 22, 2024 02:04:56.073 [548101853240] DEBUG - Deep Analysis: Performing file bitrate analysis
+Oct 22, 2024 02:04:56.230 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 0
+Oct 22, 2024 02:04:56.268 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 1
+Oct 22, 2024 02:04:56.308 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 2
+Oct 22, 2024 02:04:56.347 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 3
+Oct 22, 2024 02:04:56.349 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 4
+Oct 22, 2024 02:04:56.351 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 5
+Oct 22, 2024 02:04:56.354 [548101853240] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 6
+Oct 22, 2024 02:04:56.364 [548101853240] DEBUG - Deep Analysis: Saving GoP analysis for stream 0
+Oct 22, 2024 02:04:56.367 [548101853240] DEBUG - Deep Analysis: Saving GoP analysis for stream 6
+Oct 22, 2024 02:04:56.367 [548101853240] DEBUG - Deep Analysis: Saving bitrate analysis
+Oct 22, 2024 02:04:56.368 [548101853240] DEBUG - Updating part with ID=2164 [/movies/Cosecha Oscura (2023).mkv]
+Oct 22, 2024 02:04:56.370 [548101853240] DEBUG - [MI] Closing input file: "/movies/Cosecha Oscura (2023).mkv"
+Oct 22, 2024 02:04:56.372 [548101853240] DEBUG - Updating media item 1956, size=2535359014, metadata_item_id=1054
+Oct 22, 2024 02:04:56.372 [548101853240] DEBUG - Updating part with ID=2164 [/movies/Cosecha Oscura (2023).mkv]
