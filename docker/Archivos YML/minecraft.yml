@@ -1,0 +1,18 @@
+#version: '3.8'
+services:
+  minecraft-bedrock-server:
+    image: itzg/minecraft-bedrock-server
+    container_name: mc
+    environment:
+      - EULA=TRUE
+      - SERVER_PORT=19132
+      - DIFFICULTY=easy
+      - LEVEL_SEED=-6367239042471136353
+    ports:
+      - "19132:19132/udp"
+    volumes:
+      - mc:/data
+    restart: unless-stopped
+
+volumes:
+  mc:
