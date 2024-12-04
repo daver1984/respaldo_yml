@@ -1,4 +1,0 @@
-Oct 25, 2024 22:36:00.543 [548088265424] INFO - Crash Uploader - Platform: Linux ServerUUID: 1d3a1147489be1ab1835263b95d0cd5d9b665cb0 UserId: verdugoper@gmail.com Version: 1.41.1.9057-af5eaea7a
-Oct 25, 2024 22:36:00.543 [548088265424] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.41.1.9057-af5eaea7a
-Oct 25, 2024 22:36:00.543 [548088265424] INFO - Post-processed minidump directory: /run/plex-temp
-Oct 25, 2024 22:36:00.782 [548119828624] INFO - Crash Uploader - Processing Complete.

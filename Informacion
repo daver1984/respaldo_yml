@@ -1,0 +1,67 @@
+Documentación: Configuración de Plex, Jellyfin y Minecraft Bedrock Server en Raspberry Pi 4
+
+1. Montar Unidad de Red (NAS)
+Instalación de cifs-utils:
+
+sudo apt update
+sudo apt install cifs-utils
+
+Crear un directorio para montar la unidad de red:
+
+sudo mkdir -p /mnt/nas
+Montar la unidad de red:
+
+sudo mount -t cifs -o username=admin,password=Fabito.01,vers=1.0 //192.168.0.1/g /mnt/nas
+
+Verificar el montaje:
+
+df -h
+
+Montaje automático al iniciar:
+Añadir la siguiente línea a /etc/fstab:
+
+//192.168.0.1/g /mnt/nas cifs username=admin,password=Fabito.01,uid=1000,gid=1000,iocharset=utf8,vers=1.0 0 0
+
+2. Configuración de Plex
+
+3. Configuración de Jellyfin
+
+4. Configuración de Minecraft Bedrock Server
+
+5. Abrir Puertos en el Router
+
+Puertos a abrir:
+
+Servicio	                Puerto	Protocolo
+Plex	                    32400	TCP
+Jellyfin	                8096	TCP
+Jellyfin (op)	            8920	TCP/UDP
+Jellyfin (op)	            7359	UDP
+Jellyfin (op)	            1900	UDP
+Minecraft Bedrock Server	19132	UDP
+
+
+
+Comandos Docker compatibles con Raspberry Pi 4
+
+Comandos Básicos de Docker
+
+Levantar contenedores:
+
+docker-compose up -d
+
+Verificar contenedores en ejecución:
+
+docker ps
+
+Acceder a los logs de un contenedor:
+
+docker logs <container_name>
+
+Parar contenedores:
+
+docker-compose down
+
+Verificar detalles del sistema Docker:
+
+docker info

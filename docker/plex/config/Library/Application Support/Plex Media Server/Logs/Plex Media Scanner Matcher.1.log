@@ -1,7 +1,0 @@
-Oct 26, 2024 04:17:01.250 [547960012280] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
-Oct 26, 2024 04:17:01.251 [547960012280] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
-Oct 26, 2024 04:17:01.251 [547960012280] INFO - Processor: 4-core AArch64
-Oct 26, 2024 04:17:01.251 [547960012280] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 1056
-Oct 26, 2024 04:17:01.254 [548040187960] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
-Oct 26, 2024 04:17:01.512 [548040187960] DEBUG - Matcher: found 69 auxiliary files for LEGO Marvel Avengers: Mission Demolition
-Oct 26, 2024 04:17:01.512 [548040187960] DEBUG - Matcher: no sidecar subtitle files found for /movies/LEGO Marvel Avengers Mision demolicion (2024).mkv

@@ -1,7 +1,0 @@
-Oct 26, 2024 04:16:59.244 [547723017720] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
-Oct 26, 2024 04:16:59.244 [547723017720] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
-Oct 26, 2024 04:16:59.244 [547723017720] INFO - Processor: 4-core AArch64
-Oct 26, 2024 04:16:59.244 [547723017720] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 1052
-Oct 26, 2024 04:16:59.247 [547803193400] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
-Oct 26, 2024 04:16:59.501 [547803193400] DEBUG - Matcher: found 69 auxiliary files for Brothers
-Oct 26, 2024 04:16:59.501 [547803193400] DEBUG - Matcher: no sidecar subtitle files found for /movies/Brothers (2024).mkv

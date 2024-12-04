@@ -1,8 +1,0 @@
-Oct 26, 2024 02:01:57.537 [548037119480] INFO - Plex Media Scanner v1.41.1.9057-af5eaea7a - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT -03:00
-Oct 26, 2024 02:01:57.538 [548037119480] INFO - Linux version: 6.6.51+rpt-rpi-v8, language: en-US
-Oct 26, 2024 02:01:57.538 [548037119480] INFO - Processor: 4-core AArch64
-Oct 26, 2024 02:01:57.538 [548037119480] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --generate --chapter-thumbs-only --item 1057 --log-file-suffix  Chapter Thumbnails
-Oct 26, 2024 02:01:57.539 [548117295160] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
-Oct 26, 2024 02:01:57.773 [548117295160] DEBUG - Created chapter thumbnail for metadata item 1057, media item 1961 for chapter number 1:0 at "/config/Library/Application Support/Plex Media Server/Media/localhost/6/9fd1ba27aaccac0eaf824d675cd9bd3f6aeeb04.bundle/Contents/Chapters/chapter1.jpg"
-Oct 26, 2024 02:01:57.773 [548117295160] DEBUG - Created chapter thumbnail for metadata item 1057, media item 1961 for chapter number 2:5244450 at "/config/Library/Application Support/Plex Media Server/Media/localhost/6/9fd1ba27aaccac0eaf824d675cd9bd3f6aeeb04.bundle/Contents/Chapters/chapter2.jpg"
-Oct 26, 2024 02:01:57.773 [548117295160] DEBUG - Generated new chapter thumbnails for Loups-Garous.
