@@ -1,0 +1,6 @@
+Resumen de Puertos a Redireccionar (Router y Modem):
+53/tcp y 53/udp (DNS - Pi-hole)
+80/tcp (HTTP - Pi-hole)
+443/tcp (HTTPS - Pi-hole)
+51820/udp (VPN - wg-easy)
+51821/tcp (Admin - wg-easy)
