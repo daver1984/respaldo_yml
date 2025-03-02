@@ -1,17 +1,15 @@
-#version: "3.8"
-
 services:
   wg-easy:
     environment:
       # ⚠️ Change the server's hostname (clients will connect to):
-      - WG_HOST=daver2024.duckdns.org
+      - WG_HOST=${WG_HOST}
 
       # ⚠️ Change the Web UI Password:
-      - PASSWORD_HASH=$$2a$$12$$2pih00YGQBEaq4XFUI9uLOR3arrxJqWsApd1GoidDcfjE6ry72pq6
+      - PASSWORD_HASH=${PASSWORD_HASH}
 
       # 💡 This is the Pi-Hole Container's IP Address
-      - WG_DEFAULT_DNS=10.8.1.3
-      - WG_DEFAULT_ADDRESS=10.8.0.x
+      - WG_DEFAULT_DNS=${WG_DEFAULT_DNS}
+      - WG_DEFAULT_ADDRESS=${WG_DEFAULT_ADDRESS}
     image: ghcr.io/wg-easy/wg-easy
     container_name: wg-easy
     volumes:
@@ -35,7 +33,8 @@ services:
     container_name: pihole
     environment:
       # ⚠️ Change the Web UI Password:
-      - WEBPASSWORD=Fabito.2025@
+      - WEBPASSWORD=${WEBPASSWORD}
+      - TZ=${TZ}
     volumes:
       - /home/pi/docker/wg-pihole/config:/etc/pihole
       - /home/pi/docker/wg-pihole/dnsmasq.d:/etc/dnsmasq.d
