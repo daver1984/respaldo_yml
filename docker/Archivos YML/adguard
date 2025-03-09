@@ -1,0 +1,18 @@
+#version: "3.8"
+services:
+  adguardhome:
+    container_name: adguardhome
+    image: adguard/adguardhome:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+      - "443:443/tcp"
+      - "443:443/udp"
+      - "3000:3000/tcp"
+    environment:
+      - TZ=${TZ}
+    volumes:
+      - './adguard/work:/opt/adguardhome/work'
+      - './adguard/conf:/opt/adguardhome/conf'
+    restart: unless-stopped
