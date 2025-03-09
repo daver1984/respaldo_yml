@@ -18,9 +18,6 @@ cd /home/pi/docker/jellyfin
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
-cd /home/pi/docker/minecraft
-sudo docker compose pull && sudo docker compose down && sudo docker compose up -d --remove-orphans
-sudo docker image prune -f
 cd /home/pi/docker/netdata
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
@@ -33,11 +30,7 @@ cd /home/pi/docker/portainer
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
-cd /home/pi/docker/adguard
-sudo docker compose pull
-sudo docker compose up -d --remove-orphans
-sudo docker image prune -f
-cd /home/pi/docker/wireguard
+cd /home/pi/docker/wire-adguard
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
