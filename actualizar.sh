@@ -33,7 +33,12 @@ cd /home/pi/docker/portainer
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
-cd /home/pi/docker/wg-pihole
+cd /home/pi/docker/adguard
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
+cd /home/pi/docker/wireguard
+sudo docker compose pull
+sudo docker compose up -d --remove-orphans
+sudo docker image prune -f
+sudo reboot
