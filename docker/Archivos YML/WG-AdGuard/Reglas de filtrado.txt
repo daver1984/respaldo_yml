@@ -5,10 +5,21 @@
 @@||googleads.g.doubleclick.net
 @@||googlesyndication.com
 @@||google-analytics.com
+@@||ad.doubleclick.net
 #Minecraft
 @@||mojang.com
 @@||minecraft.net
 @@||minecraftservices.com
+#Call of Duty
+@@||callofduty.com
+@@||activision.com
+@@||blizzard.com
+@@||battle.net
+#Games
+@@||cod.tracker.gg
+@@||codstats.net
+@@||s.activision.com
+@@||api.activision.com
 #Nintendo
 @@||nintendo.com
 @@||nintendo.net
