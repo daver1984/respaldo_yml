@@ -14,10 +14,6 @@ cd /home/pi/docker/homeassistant
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 sudo docker image prune -f
-cd /home/pi/docker/jellyfin
-sudo docker compose pull
-sudo docker compose up -d --remove-orphans
-sudo docker image prune -f
 cd /home/pi/docker/netdata
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
