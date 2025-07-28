@@ -1,0 +1,20 @@
+Agregar tareas programadas
+
+# 🚀 Verificación de contenedores al reiniciar
+@reboot /home/pi/scripts/verificar_contenedores.sh
+
+# 🗓️ Verificación semanal cada lunes a las 05:00 AM
+0 5 * * 1 /home/pi/scripts/verificar_contenedores.sh
+
+# 🔄 Actualización semanal del sistema
+0 5 * * 1 /home/pi/scripts/actualizar.sh
+
+# 🧼 Borrado de logs cada 30 días
+0 2 */30 * * find /home/pi/logs -name "*.log" -type f -mtime +30 -delete
+
+Logs y trazabilidad
+
+Todos los logs se almacenan en /home/pi/logs
+Para visualizar últimos eventos:
+
+tail -n 30 /home/pi/logs/verificacion_contenedores.log
