@@ -9,3 +9,33 @@ services:
     restart: unless-stopped
     privileged: true
     network_mode: host
+
+#Nueva integracion
+  mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9009:9001"
+    volumes:
+      - /home/pi/docker/mosquitto/config:/mosquitto/config
+      - /home/pi/docker/mosquitto/data:/mosquitto/data
+      - /home/pi/docker/mosquitto/log:/mosquitto/log
+    environment:
+      - TZ=America/Santiago
+
+#Para dispositivos Tuya
+  tuyamqtt:
+    image: thehookup/tuya-mqtt
+    container_name: tuyamqtt
+    restart: unless-stopped
+    ports:
+      - "8883:8883"
+    environment:
+      - MQTT_HOST=localhost
+      - MQTT_PORT=1883
+      - TUYA_USERNAME=tu_correo_tuya
+      - TUYA_PASSWORD=tu_contraseña_tuya
+      - TUYA_ACCESS_ID=tu_access_id
+      - TUYA_ACCESS_SECRET=tu_access_secret
