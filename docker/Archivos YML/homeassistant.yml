@@ -36,3 +36,16 @@ services:
       - .env
     volumes:
       - /home/pi/docker/tuya-mqtt/cache:/cache
+
+
+  #Solo para el archivo .env
+  # Tuya MQTT credentials
+TUYA_USERNAME=tu_correo_tuya
+TUYA_PASSWORD=tu_contraseña_tuya
+TUYA_ACCESS_ID=tu_access_id
+TUYA_ACCESS_SECRET=tu_access_secret
+
+# MQTT broker settings
+MQTT_HOST=localhost
+MQTT_PORT=1883
+
