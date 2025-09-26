@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   homeassistant:
     container_name: homeassistant
@@ -10,7 +12,6 @@ services:
     privileged: true
     network_mode: host
 
-#Nueva integracion
   mqtt:
     image: eclipse-mosquitto:latest
     container_name: mqtt
@@ -25,17 +26,13 @@ services:
     environment:
       - TZ=America/Santiago
 
-#Para dispositivos Tuya
   tuyamqtt:
     image: thehookup/tuya-mqtt
     container_name: tuyamqtt
     restart: unless-stopped
     ports:
       - "8883:8883"
-    environment:
-      - MQTT_HOST=localhost
-      - MQTT_PORT=1883
-      - TUYA_USERNAME=tu_correo_tuya
-      - TUYA_PASSWORD=tu_contraseña_tuya
-      - TUYA_ACCESS_ID=tu_access_id
-      - TUYA_ACCESS_SECRET=tu_access_secret
+    env_file:
+      - .env
+    volumes:
+      - /home/pi/docker/tuya-mqtt/cache:/cache
