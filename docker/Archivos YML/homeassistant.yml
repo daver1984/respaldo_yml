@@ -38,8 +38,8 @@ services:
       - /home/pi/docker/tuya-mqtt/cache:/cache
 
 
-  #Solo para el archivo .env
-  # Tuya MQTT credentials
+#Solo para el archivo .env
+# Tuya MQTT credentials
 TUYA_USERNAME=tu_correo_tuya
 TUYA_PASSWORD=tu_contraseña_tuya
 TUYA_ACCESS_ID=tu_access_id
