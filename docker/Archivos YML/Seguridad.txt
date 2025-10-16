@@ -1,5 +1,0 @@
-Mirar tamaño de carpeta de Seguridad:
-du -sh /mnt/nas/Imagenes/Seguridad
-
-Carpeta de montado para grabaciones:
-/mnt/nas/Imagenes/Seguridad
