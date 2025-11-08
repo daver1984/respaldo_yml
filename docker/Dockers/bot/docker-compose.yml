@@ -1,0 +1,22 @@
+#version: '3.3'
+services:
+  docker-controller-bot:
+    image: dgongut/docker-controller-bot:latest
+    container_name: docker-controller-bot
+    restart: always
+    network_mode: host
+    tty: true
+    environment:
+      - TELEGRAM_TOKEN=8272284707:AAFi9KZ1kKtoNpXtwvSuWaMBSUyekWkVzfU
+      - TELEGRAM_ADMIN=1818312382
+      - CONTAINER_NAME=docker-controller-bot
+      - TZ=America/Santiago
+      - CHECK_UPDATES=1
+      - CHECK_UPDATE_EVERY_HOURS=168
+      - BUTTON_COLUMNS=2
+      - LANGUAGE=ES
+      - EXTENDED_MESSAGES=0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/localtime:/etc/localtime:ro
+
