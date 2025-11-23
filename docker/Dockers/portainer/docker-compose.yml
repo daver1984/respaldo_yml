@@ -1,15 +1,18 @@
 #version: "3.8"
-
 services:
   portainer:
-    image: portainer/portainer-ce:2.21.4
+    image: portainer/portainer-ce:latest
     container_name: portainer
-    restart: always
+    restart: unless-stopped
     ports:
-      - "9000:9000"
+      - "9000:9000"     # HTTP (no recomendado en producción)
+      - "9443:9443"     # HTTPS (recomendado)
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
+    security_opt:
+      - no-new-privileges:true
 
 volumes:
   portainer_data:
+
