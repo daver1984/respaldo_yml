@@ -1,0 +1,33 @@
+Alias permanentes para los scripts
+
+- mantener → ejecuta el script de mantención
+- verificar → ejecuta el script post‑reinicio
+- verlog → ejecuta el script de los logs
+
+1) Editar el archivo de alias del usuario pi
+Ejecuta:
+nano ~/.bash_aliases
+
+Si el archivo no existe, Nano lo creará.
+
+2) Agrega estas líneas dentro del archivo
+    alias mantener='sudo /usr/local/bin/mantencion'
+    alias verificar='sudo /usr/local/bin/verificacion_post_reboot'
+    alias verlog='tail -n 50 /home/pi/logs/mantenimiento_integrado.log'
+
+3) Guarda y cierra
+
+4) Recargar alias sin reiniciar
+Ejecuta:
+source ~/.bash_aliases
+
+5) Ahora puedes usar tus comandos así de simple
+Ejecutar mantención:
+    mantener
+    (recuerda que este reinicia la Raspberry al final)
+Ejecutar verificación:
+    verificar
+    (seguro, no reinicia nada)
+Ejecutar verlog
+    verlog
+    (Ahora puedes ver el log)

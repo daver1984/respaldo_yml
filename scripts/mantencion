@@ -1,0 +1,38 @@
+#!/bin/bash
+
+FECHA=$(date '+%Y-%m-%d %H:%M:%S')
+LOG="/home/pi/logs/mantenimiento_integrado.log"
+EMAIL="verdugoper@gmail.com"
+
+echo "$FECHA 🧹 Iniciando mantención semanal..." | tee -a "$LOG"
+
+# Actualización del sistema operativo
+echo "$FECHA 📦 Actualizando sistema operativo..." | tee -a "$LOG"
+sudo apt update && sudo apt full-upgrade -y | tee -a "$LOG"
+
+# Actualización de contenedores Docker
+echo "$FECHA 🐳 Actualizando contenedores Docker..." | tee -a "$LOG"
+docker pull lscr.io/linuxserver/plex:latest
+docker pull lscr.io/linuxserver/duckdns:latest
+docker pull portainer/portainer-ce:latest
+docker pull netdata/netdata:stable
+docker pull dgongut/docker-controller-bot:latest
+docker pull adguard/adguardhome:latest
+docker pull ghcr.io/wg-easy/wg-easy:latest
+
+# Recreación de contenedores mediante Portainer (stacks)
+echo "$FECHA 🔄 Recreando stacks..." | tee -a "$LOG"
+docker compose -f /home/pi/docker/plex/docker-compose.yml pull && docker compose -f /home/pi/docker/plex/docker-compose.yml up -d
+docker compose -f /home/pi/docker/duckdns/docker-compose.yml pull && docker compose -f /home/pi/docker/duckdns/docker-compose.yml up -d
+docker compose -f /home/pi/docker/portainer/docker-compose.yml pull && docker compose -f /home/pi/docker/portainer/docker-compose.yml up -d
+docker compose -f /home/pi/docker/netdata/docker-compose.yml pull && docker compose -f /home/pi/docker/netdata/docker-compose.yml up -d
+docker compose -f /home/pi/docker/bot/docker-compose.yml pull && docker compose -f /home/pi/docker/bot/docker-compose.yml up -d
+docker compose -f /home/pi/docker/wire-adguard/docker-compose.yml pull && docker compose -f /home/pi/docker/wire-adguard/docker-compose.yml up -d
+
+# Limpieza de imágenes antiguas
+echo "$FECHA 🧹 Eliminando imágenes antiguas..." | tee -a "$LOG"
+docker image prune -af | tee -a "$LOG"
+
+# Reinicio del sistema
+echo "$FECHA 🔄 Reiniciando Raspberry Pi..." | tee -a "$LOG"
+sudo reboot

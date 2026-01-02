@@ -1,0 +1,47 @@
+#!/bin/bash
+
+FECHA=$(date '+%Y-%m-%d %H:%M:%S')
+LOG="/home/pi/logs/mantenimiento_integrado.log"
+EMAIL="verdugoper@gmail.com"
+
+echo "$FECHA 🔍 Verificación post-reinicio iniciada." | tee -a "$LOG"
+
+# Contenedores reales según Portainer
+CONTENEDORES=("adguardhome" "docker-controller-bot" "duckdns" "netdata" "plex" "portainer" "wg-easy")
+
+# Esperar a que Docker esté operativo
+until docker info >/dev/null 2>&1; do
+    echo "$FECHA ⏳ Esperando que Docker esté listo..." | tee -a "$LOG"
+    sleep 5
+done
+
+# Esperar a que los contenedores aparezcan
+for NAME in "${CONTENEDORES[@]}"; do
+    until docker ps --format "{{.Names}}" | grep -qi "$NAME"; do
+        echo "$FECHA ⏳ Esperando que '$NAME' aparezca en docker ps..." | tee -a "$LOG"
+        sleep 5
+    done
+done
+
+# Verificación final
+for NAME in "${CONTENEDORES[@]}"; do
+    ESTADO=$(docker inspect -f '{{.State.Status}}' "$NAME" 2>/dev/null)
+    SALUD=$(docker inspect -f '{{.State.Health.Status}}' "$NAME" 2>/dev/null)
+
+    if [ "$ESTADO" = "running" ]; then
+        if [ "$SALUD" = "healthy" ] || [ -z "$SALUD" ]; then
+            echo "$FECHA ✅ '$NAME' funcionando correctamente." | tee -a "$LOG"
+        else
+            echo "$FECHA ⚠️ '$NAME' corriendo pero no saludable: $SALUD" | tee -a "$LOG"
+        fi
+    else
+        echo "$FECHA ❌ '$NAME' NO está funcionando. Estado: $ESTADO" | tee -a "$LOG"
+    fi
+done
+
+# Envío de correo
+ASUNTO="[$FECHA] 🧩 Verificación post-reinicio Raspberry Pi"
+MENSAJE="Resumen:\n\n$(tail -n 40 "$LOG")"
+
+echo -e "Subject: $ASUNTO\n\n$MENSAJE" | msmtp "$EMAIL"
+echo "$FECHA 📧 Correo enviado." | tee -a "$LOG"

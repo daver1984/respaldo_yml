@@ -1,0 +1,213 @@
+1. Descripción general del sistema
+
+Sistema de mantención y verificación automatizada para una Raspberry Pi que ejecuta múltiples servicios en contenedores Docker, administrados mediante Portainer. El objetivo es asegurar:
+- Actualización periódica y controlada del sistema operativo y contenedores.
+- Reinicio automático y limpio luego de la mantención.
+- Verificación post‑reinicio robusta, sin falsos negativos.
+- Notificación por correo con el estado real de los servicios.
+
+El sistema combina:
+- Scripts Bash en /usr/local/bin
+- Cron (para la mantención semanal)
+- systemd (para la verificación post‑reinicio)
+- Docker + Portainer
+- msmtp para envío de correo
+
+2. Arquitectura del sistema
+
+2.1 Componentes principales
+
+- Hardware:
+    - Raspberry Pi (con Raspberry Pi OS / Debian based)
+- Capa de contenedores:
+    - Docker Engine
+    - Portainer (gestión visual y stacks)
+- Contenedores:
+    - adguardhome
+    - docker-controller-bot
+    - duckdns
+    - netdata
+    - plex
+    - portainer
+    - wg-easy
+- Automatización y orquestación:
+    - cron (crontab del usuario pi):
+        - Ejecuta /usr/local/bin/mantencion todos los sábados a las 05:00.
+    - systemd:
+        - Servicio verificacion.service que ejecuta /usr/local/bin/verificacion_post_reboot en cada arranque.
+    - Notificación:
+        - msmtp configurado para enviar correos a verdugoper@gmail.com.
+    - Log central en /home/pi/logs/mantenimiento_integrado.log.
+
+2.2 Flujo de alto nivel
+Flujo A: Mantención semanal
+- Cron ejecuta /usr/local/bin/mantencion los sábados a las 05:00.
+- El script:
+- Actualiza paquetes del sistema.
+- Actualiza imágenes Docker y recrea contenedores.
+- Limpia imágenes antiguas.
+- Registra todo en el log.
+- Reinicia la Raspberry Pi.
+Flujo B: Verificación post‑reinicio
+- La Raspberry Pi arranca.
+- systemd levanta verificacion.service.
+- El servicio ejecuta /usr/local/bin/verificacion_post_reboot.
+- El script:
+- Espera a que Docker esté operativo.
+- Espera a que los contenedores aparezcan en docker ps.
+- Verifica estado (running + healthy si aplica) de cada contenedor.
+- Registra el resultado en el log.
+- Envía un correo con un resumen del estado.
+
+3. Detalle de implementación
+3.1 Script de mantención semanal
+Ubicación:
+/usr/local/bin/mantencion
+
+Rol:
+- Orquestar el ciclo de:
+    - actualización de sistema
+    - actualización / recreación de contenedores
+    - limpieza
+    - reinicio
+Ejecución automática (cron):
+    crontab -e
+
+Línea configurada:
+0 5 * * 6 /usr/local/bin/mantencion
+
+- 0 5 → 05:00 AM
+- * * 6 → todos los sábados
+- Usuario: pi
+Esto asegura una ventana de mantención recurrente, fuera de horario de uso normal.
+
+3.2 Script de verificación post‑reinicio
+Ubicación:
+/usr/local/bin/verificacion_post_reboot
+
+Responsabilidades:
+- Confirmar que Docker está operativo.
+- Confirmar que cada contenedor crítico está:
+    - running
+    - y, si aplica, healthy.
+- Registrar resultado en:
+    - /home/pi/logs/mantenimiento_integrado.log
+    - Enviar correo con resumen de la verificación.
+Lógica clave (resumen conceptual):
+- Espera a que docker info responda ok.
+- Para cada contenedor esperado (adguardhome, docker-controller-bot, duckdns, netdata, plex, portainer, wg-easy):
+- Espera hasta que aparezca en docker ps.
+- Luego inspecciona:
+    - .State.Status
+    - .State.Health.Status (si existe).
+- Marca:
+    - ✅ si está running y saludable (o sin healthcheck).
+    - ⚠️ si está running pero con health distinto a healthy.
+    - ❌ si no está running.
+- Envía correo con:
+    - Subject: incluye timestamp.
+    - Body: últimos registros relevantes del log.
+
+3.3 Servicio systemd de verificación
+Archivo de servicio:
+/etc/systemd/system/verificacion.service
+
+Contenido conceptual:
+
+[Unit]
+Description=Verificación post reinicio
+After=multi-user.target docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/verificacion_post_reboot
+
+[Install]
+WantedBy=multi-user.target
+
+
+Características:
+- Type=oneshot:
+    - Se ejecuta una vez, no queda residente.
+    - Tras terminar correctamente, aparece como inactive (dead) con status=0/SUCCESS, lo cual es esperado.
+- After=docker.service:
+    - Se asegura que Docker esté al menos iniciado antes de correr la verificación (complementado por la espera inteligente del script).
+
+Habilitación:
+sudo systemctl daemon-reload
+sudo systemctl enable verificacion.service
+
+4. Decisiones técnicas y justificación
+
+4.1 Uso de docker ps en lugar de docker compose ps
+- Los contenedores son gestionados por Portainer, usando Docker Compose V2.
+- Los nombres reales de contenedor no siempre coinciden con el nombre de la carpeta del stack.
+- docker compose ps depende de la ruta y del archivo docker-compose.yml activo.
+- docker ps siempre refleja la realidad del daemon Docker, independiente de Portainer o la ruta.
+
+Decisión:
+- Verificar estado de contenedores por docker ps + nombres reales.
+- Usar docker inspect para obtener State.Status y Health.
+
+Resultado: se eliminan falsos negativos, incluso cuando Portainer recrea contenedores o cambia detalles internos.
+
+4.2 Espera inteligente en vez de sleep fijo
+Problema observado:
+- Al inicio, el script corría demasiado rápido después del arranque.
+- Docker aún no tenía todos los contenedores arriba.
+- Resultado: falsos ❌ en contenedores que sí terminarían levantando.
+Solución:
+- Implementar un “esperador inteligente”:
+- until docker info ...
+- until docker ps | grep ... para cada contenedor esperado.
+Beneficio:
+- El sistema se adapta dinámicamente al tiempo real que toma el arranque, en lugar de asumir un tiempo fijo.
+- Reduce drásticamente falsos negativos y correos alarmistas.
+
+4.3 Uso de logs centralizados y correo
+- Log consolidado en:
+/home/pi/logs/mantenimiento_integrado.log
+
+- Contiene tanto:
+- la mantención (pulls, recreación, limpieza, reinicio)
+- como la verificación post‑reinicio.
+- El correo envía un resumen usando los últimos registros relevantes del log (tail), lo que permite:
+- Ver de un vistazo:
+- si hubo problemas en actualización
+- si todos los contenedores terminaron ok
+- Mantener histórico centralizado en archivo y en correo.
+
+5. Comportamiento ante fallas
+
+5.1 Si un contenedor no levanta
+- El script de verificación detecta:
+- Estado: exited o similar.
+- Registra ❌ en el log.
+- El correo incluye el servicio fallando.
+- Permite reaccionar manualmente, entrar a Portainer o usar docker logs para diagnóstico.
+
+5.2 Si Docker demora más de lo normal
+- El “esperador inteligente” sigue reintentando hasta que:
+- docker info responda.
+- Los contenedores definidos aparezcan en docker ps.
+- Mientras tanto, registra mensajes del tipo:
+- “Esperando que Docker esté listo…”
+- “Esperando que 'nombre' aparezca en docker ps…”
+Esto da trazabilidad clara en el log.
+
+6. Posibles extensiones futuras
+
+Algunas ideas que calzan muy bien con lo que ya construiste:
+- Integración con Prometheus / Netdata / Grafana:
+- Exportar métricas de estado de contenedores.
+- Alertas adicionales:
+- Enviar correo solo cuando haya un ❌ o ⚠️.
+- Integración con Telegram / Discord / Slack mediante webhook.
+- Backups automáticos:
+- Agregar al flujo semanal:
+- backup de volúmenes críticos
+- backup de configuraciones de Portainer
+- Self‑healing básico:
+- Si un contenedor no está running, intentar:
+- docker restart nombre
+- Registrar si se recupera o no.
