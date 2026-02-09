@@ -5,7 +5,7 @@ services:
     container_name: portainer
     restart: unless-stopped
     ports:
-      - "9000:9000"     # HTTP (no recomendado en producción)
+      - "9000:9000"     # HTTP (no recomendado en producciÃ³n)
       - "9443:9443"     # HTTPS (recomendado)
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -15,4 +15,3 @@ services:
 
 volumes:
   portainer_data:
-

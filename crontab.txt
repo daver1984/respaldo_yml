@@ -3,9 +3,9 @@
 0 2 */30 * * find /home/pi/logs -name "*.log" -type f -mtime +30 -delete
 
 # Mantencion ejecutada a las 03:00 AM todos los domingos
-0 3 * * 0 /home/pi/scripts/mantenimiento_integrado.sh >> /home/pi/logs/mantenimiento_integrado_cron.log 2>&1
+0 3 * * 0 /home/pi/scripts/mantencion.sh >> /home/pi/logs/mantencion.log 2>&1
 
 Diseño actual (Mantención semanal - Sabados 5AM):
 
-crontab -e
-    0 5 * * 6 /usr/local/bin/mantencion
+crontab -e (Editar)
+crontab -l (Listar)
