@@ -1,38 +1,91 @@
 #!/bin/bash
 
 FECHA=$(date '+%Y-%m-%d %H:%M:%S')
-LOG="/home/pi/logs/mantenimiento_integrado.log"
+LOG="/home/pi/logs/mantencion.log"
 EMAIL="verdugoper@gmail.com"
 
 echo "$FECHA 🧹 Iniciando mantención semanal..." | tee -a "$LOG"
 
-# Actualización del sistema operativo
+# ------------------------------
+# 1. Actualización del sistema operativo
+# ------------------------------
 echo "$FECHA 📦 Actualizando sistema operativo..." | tee -a "$LOG"
 sudo apt update && sudo apt full-upgrade -y | tee -a "$LOG"
+APT_STATUS=$?
 
-# Actualización de contenedores Docker
+# ------------------------------
+# 2. Actualización de imágenes Docker
+# ------------------------------
 echo "$FECHA 🐳 Actualizando contenedores Docker..." | tee -a "$LOG"
-docker pull lscr.io/linuxserver/plex:latest
-docker pull lscr.io/linuxserver/duckdns:latest
-docker pull portainer/portainer-ce:latest
-docker pull netdata/netdata:stable
-docker pull dgongut/docker-controller-bot:latest
-docker pull adguard/adguardhome:latest
-docker pull ghcr.io/wg-easy/wg-easy:latest
 
-# Recreación de contenedores mediante Portainer (stacks)
+IMAGENES=(
+    "lscr.io/linuxserver/plex:latest"
+    "lscr.io/linuxserver/duckdns:latest"
+    "portainer/portainer-ce:latest"
+    "netdata/netdata:stable"
+    "dgongut/docker-controller-bot:latest"
+    "adguard/adguardhome:latest"
+    "ghcr.io/wg-easy/wg-easy:latest"
+    "rustdesk/rustdesk-server:latest"
+)
+
+for IMG in "${IMAGENES[@]}"; do
+    echo "$FECHA ⬇️ Pull de $IMG" | tee -a "$LOG"
+    docker pull "$IMG" >> "$LOG" 2>&1
+    if [ $? -ne 0 ]; then
+        echo "$FECHA ❌ Error al actualizar la imagen $IMG" | tee -a "$LOG"
+    fi
+done
+
+# ------------------------------
+# 3. Recreación de stacks Docker
+# ------------------------------
 echo "$FECHA 🔄 Recreando stacks..." | tee -a "$LOG"
-docker compose -f /home/pi/docker/plex/docker-compose.yml pull && docker compose -f /home/pi/docker/plex/docker-compose.yml up -d
-docker compose -f /home/pi/docker/duckdns/docker-compose.yml pull && docker compose -f /home/pi/docker/duckdns/docker-compose.yml up -d
-docker compose -f /home/pi/docker/portainer/docker-compose.yml pull && docker compose -f /home/pi/docker/portainer/docker-compose.yml up -d
-docker compose -f /home/pi/docker/netdata/docker-compose.yml pull && docker compose -f /home/pi/docker/netdata/docker-compose.yml up -d
-docker compose -f /home/pi/docker/bot/docker-compose.yml pull && docker compose -f /home/pi/docker/bot/docker-compose.yml up -d
-docker compose -f /home/pi/docker/wire-adguard/docker-compose.yml pull && docker compose -f /home/pi/docker/wire-adguard/docker-compose.yml up -d
 
-# Limpieza de imágenes antiguas
+STACKS=(
+    "/home/pi/docker/plex/docker-compose.yml"
+    "/home/pi/docker/duckdns/docker-compose.yml"
+    "/home/pi/docker/portainer/docker-compose.yml"
+    "/home/pi/docker/netdata/docker-compose.yml"
+    "/home/pi/docker/bot/docker-compose.yml"
+    "/home/pi/docker/wire-adguard/docker-compose.yml"
+    "/home/pi/docker/rustdesk/docker-compose.yml"
+)
+
+for STACK in "${STACKS[@]}"; do
+    echo "$FECHA 🔧 Actualizando stack: $STACK" | tee -a "$LOG"
+    docker compose -f "$STACK" pull >> "$LOG" 2>&1
+    docker compose -f "$STACK" up -d >> "$LOG" 2>&1
+
+    if [ $? -ne 0 ]; then
+        echo "$FECHA ❌ Error al recrear el stack $STACK" | tee -a "$LOG"
+    fi
+done
+
+# ------------------------------
+# 4. Limpieza de imágenes antiguas
+# ------------------------------
 echo "$FECHA 🧹 Eliminando imágenes antiguas..." | tee -a "$LOG"
 docker image prune -af | tee -a "$LOG"
 
-# Reinicio del sistema
-echo "$FECHA 🔄 Reiniciando Raspberry Pi..." | tee -a "$LOG"
-sudo reboot
+# ------------------------------
+# 5. Rotación automática del log si supera 5 MB
+# ------------------------------
+LOG_SIZE=$(stat -c%s "$LOG")
+MAX_SIZE=$((5 * 1024 * 1024))
+
+if [ $LOG_SIZE -gt $MAX_SIZE ]; then
+    echo "$FECHA 🧽 Log excede 5MB, rotando..." | tee -a "$LOG"
+    mv "$LOG" "${LOG}.old"
+    touch "$LOG"
+fi
+
+# ------------------------------
+# 6. Reinicio seguro del sistema
+# ------------------------------
+if [ $APT_STATUS -eq 0 ]; then
+    echo "$FECHA 🔄 Reiniciando Raspberry Pi por actualizaciones..." | tee -a "$LOG"
+    sudo reboot
+else
+    echo "$FECHA ⚠️ No se reinicia porque hubo errores en apt." | tee -a "$LOG"
+fi

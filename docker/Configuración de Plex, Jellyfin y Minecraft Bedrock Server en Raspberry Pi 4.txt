@@ -24,9 +24,9 @@ Añadir la siguiente línea a /etc/fstab:
 
 2. Configuración de Plex
 
-3. Configuración de Jellyfin
+3. *Configuración de Jellyfin
 
-4. Configuración de Minecraft Bedrock Server
+4. *Configuración de Minecraft Bedrock Server
 
 5. Abrir Puertos en el Router
 
@@ -34,13 +34,13 @@ Puertos a abrir:
 
 Servicio	                Puerto	Protocolo
 Plex	                    32400	TCP
-Jellyfin	                8096	TCP
-Jellyfin (op)	            8920	TCP/UDP
-Jellyfin (op)	            7359	UDP
-Jellyfin (op)	            1900	UDP
-Minecraft Bedrock Server	19132	UDP
+*Jellyfin	                8096	TCP
+*Jellyfin (op)	            8920	TCP/UDP
+*Jellyfin (op)	            7359	UDP
+*Jellyfin (op)	            1900	UDP
+*Minecraft Bedrock Server	19132	UDP
 
-
+* Servicio no operativo.
 
 Comandos Docker compatibles con Raspberry Pi 4
 

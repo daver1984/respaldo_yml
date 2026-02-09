@@ -1,6 +1,14 @@
 Resumen de Puertos a Redireccionar (Router y Modem):
+
+Dominio Privado: daver2024.duckdns.org
+IP Raspberry: 192.168.0.2
+
+Puertos:
 53/tcp y 53/udp (DNS - Pi-hole)
 80/tcp (HTTP - Pi-hole)
 443/tcp (HTTPS - Pi-hole)
 51820/udp (VPN - wg-easy)
 51821/tcp (Admin - wg-easy)
+21115 TCP (RustDesk) 
+21116 TCP/UDP (RustDesk)
+21117 TCP (RustDesk)

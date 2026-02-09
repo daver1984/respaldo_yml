@@ -1,29 +1,59 @@
 #!/bin/bash
 
 FECHA=$(date '+%Y-%m-%d %H:%M:%S')
-LOG="/home/pi/logs/mantenimiento_integrado.log"
+LOG="/home/pi/logs/mantencion.log"
 EMAIL="verdugoper@gmail.com"
 
 echo "$FECHA 🔍 Verificación post-reinicio iniciada." | tee -a "$LOG"
 
-# Contenedores reales según Portainer
-CONTENEDORES=("adguardhome" "docker-controller-bot" "duckdns" "netdata" "plex" "portainer" "wg-easy")
+# ------------------------------
+# 1. Lista REAL de contenedores
+# ------------------------------
+CONTENEDORES=(
+    "hbbr"
+    "hbbs"
+    "duckdns"
+    "plex"
+    "netdata"
+    "portainer"
+    "docker-controller-bot"
+    "adguardhome"
+    "wg-easy"
+)
 
-# Esperar a que Docker esté operativo
+# ------------------------------
+# 2. Esperar a que Docker esté operativo
+# ------------------------------
+echo "$FECHA ⏳ Esperando que Docker esté listo..." | tee -a "$LOG"
 until docker info >/dev/null 2>&1; do
-    echo "$FECHA ⏳ Esperando que Docker esté listo..." | tee -a "$LOG"
     sleep 5
 done
+echo "$FECHA 🐳 Docker operativo." | tee -a "$LOG"
 
-# Esperar a que los contenedores aparezcan
+# ------------------------------
+# 3. Esperar a que los contenedores aparezcan
+# ------------------------------
 for NAME in "${CONTENEDORES[@]}"; do
+    echo "$FECHA ⏳ Esperando que '$NAME' aparezca..." | tee -a "$LOG"
+
+    TIMEOUT=0
     until docker ps --format "{{.Names}}" | grep -qi "$NAME"; do
-        echo "$FECHA ⏳ Esperando que '$NAME' aparezca en docker ps..." | tee -a "$LOG"
         sleep 5
+        TIMEOUT=$((TIMEOUT+5))
+
+        # Evitar loops infinitos
+        if [ $TIMEOUT -ge 120 ]; then
+            echo "$FECHA ❌ '$NAME' no apareció en docker ps después de 2 minutos." | tee -a "$LOG"
+            break
+        fi
     done
 done
 
-# Verificación final
+# ------------------------------
+# 4. Verificación final de estado y salud
+# ------------------------------
+echo "$FECHA 🔎 Verificando estado final de contenedores..." | tee -a "$LOG"
+
 for NAME in "${CONTENEDORES[@]}"; do
     ESTADO=$(docker inspect -f '{{.State.Status}}' "$NAME" 2>/dev/null)
     SALUD=$(docker inspect -f '{{.State.Health.Status}}' "$NAME" 2>/dev/null)
@@ -39,7 +69,21 @@ for NAME in "${CONTENEDORES[@]}"; do
     fi
 done
 
-# Envío de correo
+# ------------------------------
+# 5. Rotación del log si supera 5MB
+# ------------------------------
+LOG_SIZE=$(stat -c%s "$LOG")
+MAX_SIZE=$((5 * 1024 * 1024))
+
+if [ $LOG_SIZE -gt $MAX_SIZE ]; then
+    echo "$FECHA 🧽 Log excede 5MB, rotando..." | tee -a "$LOG"
+    mv "$LOG" "${LOG}.old"
+    touch "$LOG"
+fi
+
+# ------------------------------
+# 6. Envío de correo con resumen
+# ------------------------------
 ASUNTO="[$FECHA] 🧩 Verificación post-reinicio Raspberry Pi"
 MENSAJE="Resumen:\n\n$(tail -n 40 "$LOG")"
 

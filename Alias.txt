@@ -11,10 +11,9 @@ nano ~/.bash_aliases
 Si el archivo no existe, Nano lo creará.
 
 2) Agrega estas líneas dentro del archivo
-    alias mantener='sudo /usr/local/bin/mantencion'
-    alias verificar='sudo /usr/local/bin/verificacion_post_reboot'
-    alias verlog='tail -n 50 /home/pi/logs/mantenimiento_integrado.log'
-
+    alias mantener='sudo /home/pi/scripts/mantencion.sh'
+    alias verificar='sudo /home/pi/scripts/verificacion_post_reboot.sh'
+    alias verlog='tail -n 50 /home/pi/logs/mantencion.log'
 3) Guarda y cierra
 
 4) Recargar alias sin reiniciar
