@@ -12,6 +12,6 @@ services:
       - PLEX_CLAIM=claim-pqhopRuGz_emx1VUcVd8
     volumes:
       - /home/pi/docker/plex/config:/config
-      - /mnt/nas/Series:/tv
-      - /mnt/nas/Peliculas:/movies
+      - /mnt/router_g/Peliculas:/movies
+      - /mnt/router_g/Series:/tv
     restart: unless-stopped

@@ -1,0 +1,79 @@
+Guía de Recuperación – Configuración de Envío de Correos con msmtp (Raspberry Pi / Debian)
+
+1. Instalar paquetes necesarios
+sudo apt update
+sudo apt install -y msmtp msmtp-mta mailutils ca-certificates
+
+
+Si aparece un cuadro solicitando habilitar soporte MTA, seleccionar Yes.
+
+
+2. Crear una contraseña de aplicación en Google
+Para usar Gmail con msmtp es obligatorio activar verificación en dos pasos y generar una App Password.
+Pasos:
+- Ir a https://myaccount.google.com/security
+- Activar Verificación en dos pasos
+- Entrar a Contraseñas de aplicaciones
+- Crear una nueva contraseña (tipo: Mail, dispositivo: Other)
+- Guardar la clave generada (16 caracteres, ejemplo: abcd efgh ijkl mnop)
+
+3. Crear archivo de configuración de msmtp
+sudo nano /etc/msmtprc
+
+
+Pegar lo siguiente:
+# /etc/msmtprc
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        /var/log/msmtp.log
+
+account gmail
+host smtp.gmail.com
+port 587
+from verdugoper@gmail.com
+user verdugoper@gmail.com
+password "AQUI_TU_APP_PASSWORD"
+
+account default : gmail
+
+
+Reemplazar "AQUI_TU_APP_PASSWORD" por tu contraseña de aplicación real.
+
+
+4. Ajustar permisos del archivo
+sudo chmod 600 /etc/msmtprc
+
+
+
+5. Crear y habilitar el log de msmtp
+sudo touch /var/log/msmtp.log
+sudo chmod 666 /var/log/msmtp.log
+
+
+
+6. (Opcional pero recomendado) Copiar configuración al usuario pi
+Esto evita problemas de permisos en scripts que corren como usuario normal.
+sudo cp /etc/msmtprc /home/pi/.msmtprc
+sudo chown pi:pi /home/pi/.msmtprc
+chmod 600 /home/pi/.msmtprc
+
+
+
+7. Probar envío manual
+echo "Prueba de correo" | msmtp -v verdugoper@gmail.com
+
+
+Si todo está correcto, verás:
+- conexión exitosa a smtp.gmail.com
+- autenticación correcta
+- mensaje enviado
+
+8. Ejemplo de uso en scripts
+Para enviar un correo desde un script:
+ASUNTO="Reporte del sistema"
+MENSAJE="Todo funcionando correctamente."
+
+echo -e "Subject: $ASUNTO\nFrom: verdugoper@gmail.com\nTo: verdugoper@gmail.com\n\n$MENSAJE" \
+    | msmtp -a default verdugoper@gmail.com

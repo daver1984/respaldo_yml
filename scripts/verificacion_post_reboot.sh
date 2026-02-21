@@ -4,7 +4,7 @@ FECHA=$(date '+%Y-%m-%d %H:%M:%S')
 LOG="/home/pi/logs/mantencion.log"
 EMAIL="verdugoper@gmail.com"
 
-echo "$FECHA 🔍 Verificación post-reinicio iniciada." | tee -a "$LOG"
+echo "$FECHA ðŸ” VerificaciÃ³n post-reinicio iniciada." | tee -a "$LOG"
 
 # ------------------------------
 # 1. Lista REAL de contenedores
@@ -22,19 +22,19 @@ CONTENEDORES=(
 )
 
 # ------------------------------
-# 2. Esperar a que Docker esté operativo
+# 2. Esperar a que Docker estÃ© operativo
 # ------------------------------
-echo "$FECHA ⏳ Esperando que Docker esté listo..." | tee -a "$LOG"
+echo "$FECHA â³ Esperando que Docker estÃ© listo..." | tee -a "$LOG"
 until docker info >/dev/null 2>&1; do
     sleep 5
 done
-echo "$FECHA 🐳 Docker operativo." | tee -a "$LOG"
+echo "$FECHA ðŸ³ Docker operativo." | tee -a "$LOG"
 
 # ------------------------------
 # 3. Esperar a que los contenedores aparezcan
 # ------------------------------
 for NAME in "${CONTENEDORES[@]}"; do
-    echo "$FECHA ⏳ Esperando que '$NAME' aparezca..." | tee -a "$LOG"
+    echo "$FECHA â³ Esperando que '$NAME' aparezca..." | tee -a "$LOG"
 
     TIMEOUT=0
     until docker ps --format "{{.Names}}" | grep -qi "$NAME"; do
@@ -43,16 +43,16 @@ for NAME in "${CONTENEDORES[@]}"; do
 
         # Evitar loops infinitos
         if [ $TIMEOUT -ge 120 ]; then
-            echo "$FECHA ❌ '$NAME' no apareció en docker ps después de 2 minutos." | tee -a "$LOG"
+            echo "$FECHA âŒ '$NAME' no apareciÃ³ en docker ps despuÃ©s de 2 minutos." | tee -a "$LOG"
             break
         fi
     done
 done
 
 # ------------------------------
-# 4. Verificación final de estado y salud
+# 4. VerificaciÃ³n final de estado y salud
 # ------------------------------
-echo "$FECHA 🔎 Verificando estado final de contenedores..." | tee -a "$LOG"
+echo "$FECHA ðŸ”Ž Verificando estado final de contenedores..." | tee -a "$LOG"
 
 for NAME in "${CONTENEDORES[@]}"; do
     ESTADO=$(docker inspect -f '{{.State.Status}}' "$NAME" 2>/dev/null)
@@ -60,32 +60,32 @@ for NAME in "${CONTENEDORES[@]}"; do
 
     if [ "$ESTADO" = "running" ]; then
         if [ "$SALUD" = "healthy" ] || [ -z "$SALUD" ]; then
-            echo "$FECHA ✅ '$NAME' funcionando correctamente." | tee -a "$LOG"
+            echo "$FECHA âœ… '$NAME' funcionando correctamente." | tee -a "$LOG"
         else
-            echo "$FECHA ⚠️ '$NAME' corriendo pero no saludable: $SALUD" | tee -a "$LOG"
+            echo "$FECHA âš ï¸ '$NAME' corriendo pero no saludable: $SALUD" | tee -a "$LOG"
         fi
     else
-        echo "$FECHA ❌ '$NAME' NO está funcionando. Estado: $ESTADO" | tee -a "$LOG"
+        echo "$FECHA âŒ '$NAME' NO estÃ¡ funcionando. Estado: $ESTADO" | tee -a "$LOG"
     fi
 done
 
 # ------------------------------
-# 5. Rotación del log si supera 5MB
+# 5. RotaciÃ³n del log si supera 5MB
 # ------------------------------
 LOG_SIZE=$(stat -c%s "$LOG")
 MAX_SIZE=$((5 * 1024 * 1024))
 
 if [ $LOG_SIZE -gt $MAX_SIZE ]; then
-    echo "$FECHA 🧽 Log excede 5MB, rotando..." | tee -a "$LOG"
+    echo "$FECHA ðŸ§½ Log excede 5MB, rotando..." | tee -a "$LOG"
     mv "$LOG" "${LOG}.old"
     touch "$LOG"
 fi
 
 # ------------------------------
-# 6. Envío de correo con resumen
+# 6. EnvÃ­o de correo con resumen
 # ------------------------------
-ASUNTO="[$FECHA] 🧩 Verificación post-reinicio Raspberry Pi"
+ASUNTO="[$FECHA] ðŸ§© VerificaciÃ³n post-reinicio Raspberry Pi"
 MENSAJE="Resumen:\n\n$(tail -n 40 "$LOG")"
 
-echo -e "Subject: $ASUNTO\n\n$MENSAJE" | msmtp "$EMAIL"
-echo "$FECHA 📧 Correo enviado." | tee -a "$LOG"
+echo -e "Subject: $ASUNTO\nFrom: $EMAIL\nTo: $EMAIL\n\n$MENSAJE" | msmtp -a default "$EMAIL"
+echo "$FECHA ðŸ“§ Correo enviado." | tee -a "$LOG"

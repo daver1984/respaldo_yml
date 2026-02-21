@@ -1,11 +1,5 @@
-#Respaldo antiguo:
-# Limpieza de logs antiguos cada 30 días
-0 2 */30 * * find /home/pi/logs -name "*.log" -type f -mtime +30 -delete
-
-# Mantencion ejecutada a las 03:00 AM todos los domingos
-0 3 * * 0 /home/pi/scripts/mantencion.sh >> /home/pi/logs/mantencion.log 2>&1
-
-Diseño actual (Mantención semanal - Sabados 5AM):
-
 crontab -e (Editar)
 crontab -l (Listar)
+
+# Mantencion ejecutada a las 03:00 AM todos los sábados
+0 3 * * 6 /home/pi/scripts/mantencion.sh >> /home/pi/logs/mantencion.log 2>&1
