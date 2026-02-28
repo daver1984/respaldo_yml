@@ -27,6 +27,7 @@ IMAGENES=(
     "adguard/adguardhome:latest"
     "ghcr.io/wg-easy/wg-easy:latest"
     "rustdesk/rustdesk-server:latest"
+    "jellyfin/jellyfin:latest"
 )
 
 for IMG in "${IMAGENES[@]}"; do
@@ -50,6 +51,7 @@ STACKS=(
     "/home/pi/docker/bot/docker-compose.yml"
     "/home/pi/docker/wire-adguard/docker-compose.yml"
     "/home/pi/docker/rustdesk/docker-compose.yml"
+    "/home/pi/docker/jellyfin/docker-compose.yml"
 )
 
 for STACK in "${STACKS[@]}"; do

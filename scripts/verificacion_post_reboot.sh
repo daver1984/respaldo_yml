@@ -19,6 +19,7 @@ CONTENEDORES=(
     "docker-controller-bot"
     "adguardhome"
     "wg-easy"
+    "jellyfin"
 )
 
 # ------------------------------

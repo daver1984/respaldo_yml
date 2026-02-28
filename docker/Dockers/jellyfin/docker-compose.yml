@@ -1,0 +1,15 @@
+#version: "3.9"
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /home/pi/docker/jellyfin/config:/config
+      - /home/pi/docker/jellyfin/cache:/cache
+      - /mnt/router_g/Peliculas:/media/movies
+      - /mnt/router_g/Series:/media/series
+    environment:
+      - TZ=America/Santiago

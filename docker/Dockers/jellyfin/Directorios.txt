@@ -1,0 +1,16 @@
+Agregar los siguientes directorios:
+
+cache
+config
+media
+
+Comando:
+
+sudo mkdir -p /home/pi/docker/jellyfin/{cache,config,media}
+
+Estructura:
+
+/home/pi/docker/jellyfin/
+├── cache/
+├── config/
+└── media/
